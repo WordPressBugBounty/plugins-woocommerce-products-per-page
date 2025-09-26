@@ -1,21 +1,21 @@
 === Products Per Page for WooCommerce ===
 Contributors: sormano
-Tags: woocommerce, products per page, woocommerce products, woocommerce products per page, product page
+Tags: woocommerce, products per page, woocommerce products, WooCommerce Products Per Page, product page
 Requires at least: 4.0.0
 Tested up to: 6.8
-Stable tag: 1.2.8.2
+Stable tag: 1.2.9
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-WooCommerce Products Per Page is a easy-to-setup plugin that integrates a 'products per page' dropdown on your WooCommerce pages.
+Products Per Page for WooCommerce is a easy-to-setup plugin that integrates a 'products per page' dropdown on your WooCommerce pages.
 
 == Description ==
-WooCommerce Products Per Page is a simple plugin that adds a very valuable feature to your site; the ability for you and the customer to change the products listed per page.
+Products Per Page for WooCommerce is a simple plugin that adds a very valuable feature to your site; the ability for you and the customer to change the products listed per page.
 
 When your customers are shopping online they want the best experience possible, for some this means to have a small amount of products per page, while others like to have a long list of many (all) products available.
- Using the WooCommerce Products Per Page your customers can choose how many products they want to see per page.
+ Using the Products Per Page for WooCommerce your customers can choose how many products they want to see per page.
 
-WooCommerce Products Per Page dropdown is easy to use and has several other product page settings available.
+Products Per Page for WooCommerce dropdown is easy to use and has several other product page settings available.
 When activated the plugin already works and has multiple settings you can set to your desire.
 
 Options like:
@@ -63,15 +63,19 @@ Feel free to open a support thread if you need any further help. Please do note 
 == Screenshots ==
 
 1. Dropdown box on the WooCommerce products page
-2. Close-up of the WooCommerce products per page dropdown
+2. Close-up of the Products Per Page for WooCommerce dropdown
 3. WooCommerce Settings page
 
 
 == Changelog ==
 
+= 1.2.9 - 26/09/2025 =
+
+* [Fix] - PHP Deprecation warning of dynamic property creation
+
 = 1.2.8.2 - 10/09/2025 =
 
-* [Change] - Plugin name from WooCommerce Products Per Page > Products Per Page for WooCommerce
+* [Change] - Plugin name from Products Per Page for WooCommerce > Products Per Page for WooCommerce
 
 = 1.2.8.1 - 15/07/2025 =
 
