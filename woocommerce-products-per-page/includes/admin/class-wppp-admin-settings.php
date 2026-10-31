@@ -54,7 +54,7 @@ class WPPP_Admin_Settings {
 			),
 
 			array(
-				'title' => 'Products Per Page for WooCommerce',
+				'title' => __( 'Products Per Page for WooCommerce', 'woocommerce-product-per-page' ),
 				'type' 	=> 'title',
 				'desc' 	=> '',
 				'id' 	=> 'wppp_title'

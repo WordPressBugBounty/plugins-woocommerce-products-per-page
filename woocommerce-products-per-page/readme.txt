@@ -1,9 +1,9 @@
 === Products Per Page for WooCommerce ===
 Contributors: sormano
 Tags: woocommerce, products per page, woocommerce products, WooCommerce Products Per Page, product page
-Requires at least: 4.0.0
-Tested up to: 6.8
-Stable tag: 1.2.9
+Requires at least: 5.0.0
+Tested up to: 7.1
+Stable tag: 1.2.10
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -68,6 +68,15 @@ Feel free to open a support thread if you need any further help. Please do note 
 
 
 == Changelog ==
+
+= 1.2.10 - 31/10/2026 =
+
+* [Update] - Remove old deprecated code to clean up.
+* [Update] - Fix language loading issue
+* [Update] - Fix 'All' dropdown option
+* [Update] - PHP 8.5 compatibility
+* [Update] - WordPress 7.1 compatibility verified
+* [Update] - WooCommerce 11.2 compatibility verified
 
 = 1.2.9 - 26/09/2025 =
 

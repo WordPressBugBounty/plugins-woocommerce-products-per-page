@@ -3,7 +3,7 @@
  * Plugin Name: Products Per Page for WooCommerce
  * Plugin URI: https://wordpress.org/plugins/woocommerce-products-per-page/
  * Description: Integrate a 'products per page' dropdown on your WooCommerce website! Set-up in <strong>seconds</strong>!
- * Version: 1.2.9
+ * Version: 1.2.10
  * Author: Jeroen Sormani
  * Author URI: https://jeroensormani.com
  * Text Domain: woocommerce-products-per-page
@@ -51,7 +51,7 @@ class Woocommerce_Products_Per_Page {
 	 * @since 1.2.0
 	 * @var string $version Plugin version number.
 	 */
-	public $version = '1.2.9';
+	public $version = '1.2.10';
 
 
 	/**
@@ -233,154 +233,6 @@ class Woocommerce_Products_Per_Page {
 		return $links;
 
 	}
-
-
-	/**
-	 * Initialize admin settings page.
-	 *
-	 * @since 1.1.0
-	 */
-	public function wppp_settings_page_menu() {
-		_deprecated_function( array( $this, __FUNCTION__ ), '1.2.0' );
-	}
-
-
-	/**
-	 * Initialize settings.
-	 *
-	 * Settings will be put in an class parameter
-	 *
-	 * @since 1.1.0
-	 *
-	 * @return int number of columns.
-	 */
-	public function wppp_init_settings() {
-		_deprecated_function( array( $this, __FUNCTION__ ), '1.2.0' );
-	}
-
-
-	/**
-	 * Default settings
-	 *
-	 * Default settings will be used when no settings are available
-	 *
-	 * @since 1.0.0
-	 *
-	 * @return array default settings.
-	 */
-	public function wppp_settings_defaults() {
-		_deprecated_function( array( $this, __FUNCTION__ ), '1.2.0' );
-	}
-
-
-	/**
-	 * Shop columns.
-	 *
-	 * Set number of columns (products per row).
-	 *
-	 * @since 1.0.0
-	 *
-	 * @return int Number of columns.
-	 */
-	public function wppp_loop_shop_columns( $columns ) {
-		_deprecated_function( array( $this, __FUNCTION__ ), '1.2.0', 'Woocommerce_Products_Per_Page()->front_end->loop_shop_columns()' );
-		return $this->front_end->loop_shop_columns();
-	}
-
-
-	/**
-	 * Per page hook.
-	 *
-	 * Return the number of products per page to the hook
-	 *
-	 * @since 1.0.0
-	 *
-	 * @return int Products per page.
-	 */
-	public function wppp_loop_shop_per_page() {
-		_deprecated_function( array( $this, __FUNCTION__ ), '1.2.0', 'Woocommerce_Products_Per_Page()->front_end->loop_shop_per_page()' );
-		return $this->front_end->loop_shop_per_page();
-	}
-
-
-	/**
-	 * Posts per page.
-	 *
-	 * Set the number of posts per page on a hard way, build in fix for many themes who override the offical loop_shop_per_page filter.
-	 *
-	 * @since 1.1.0
-	 *
-	 * @return object Query object
-	 */
-	public function wppp_pre_get_posts( $q, $class ) {
-		_deprecated_function( array( $this, __FUNCTION__ ), '1.2.0', 'Woocommerce_Products_Per_Page()->front_end->woocommerce_product_query()' );
-		return $this->front_end->woocommerce_product_query();
-	}
-
-
-	/**
-	 * Add dropdown.
-	 *
-	 * Add the dropdown to the category/shop pages.
-	 *
-	 * @since 1.0.0
-	 */
-	public function wppp_shop_hooks() {
-		return _deprecated_function( array( $this, __FUNCTION__ ), '1.2.0' );
-	}
-
-
-	/**
-	 * Products per page dropdown.
-	 *
-	 * @since 1.0.0
-	 * @deprecated 1.1.0 Use wppp_dropdown() instead.
-	 */
-	public function wppp_dropdown_object() {
-		_deprecated_function( array( $this, __FUNCTION__ ), '1.1.0', '$this->wppp_dropdown()' );
-		$this->wppp_dropdown();
-	}
-
-
-	/**
-	 * Include dropdown.
-	 *
-	 * Include dropdown class and create an instance.
-	 *
-	 * @since 1.0.0
-	 */
-	public function wppp_dropdown() {
-		_deprecated_function( array( $this, __FUNCTION__ ), '1.2.0', 'Woocommerce_Products_Per_Page()->front_end->products_per_page_dropdown()' );
-		return $this->front_end->products_per_page_dropdown();
-	}
-
-
-	/**
-	 * Initilize session.
-	 *
-	 * Set an initial session for WC 2.1.X users. Cookies are set automatically prior 2.1.X.
-	 *
-	 * @since 1.0.0
-	 */
-	public function wppp_set_customer_session() {
-		_deprecated_function( array( $this, __FUNCTION__ ), '1.2.0', 'Woocommerce_Products_Per_Page()->front_end->set_customer_session()' );
-		return $this->front_end->set_customer_session();
-	}
-
-
-	/**
-	 * Set session.
-	 *
-	 * Set products per page in session.
-	 *
-	 * @since 1.1.0
-	 */
-	public function wppp_submit_check() {
-		_deprecated_function( array( $this, __FUNCTION__ ), '1.2.0', 'Woocommerce_Products_Per_Page()->front_end->products_per_page_action()' );
-		return $this->front_end->products_per_page_dropdown();
-	}
-
-
 }
 
 
